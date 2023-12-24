@@ -1,0 +1,38 @@
+﻿@model CategoriesClass
+@{
+
+
+}
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pd-0">
+            <h2 class="text-primary">تعديل قائمة</h2>
+            <hr />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CategoryID"></label>
+            <input asp-for="CategoryID" class="form-control" disabled />
+
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CategoryName"></label>
+            <input asp-for="CategoryName" class="form-control" disabled />
+
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Discription"></label>
+            <input asp-for="Discription" class="form-control" disabled />
+
+        </div>
+
+        <button type="submit" class="btn btn-danger">مسح</button>
+        <a asp-controller="Categories" asp-action="Delete" class="btn btn-secondary">العودة للقوائم</a>
+    </div>
+
+
+</form>
+

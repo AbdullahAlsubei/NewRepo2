@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ItemsPropartiesClass>
+
+@{
+    int x = 1;
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>الوصف</th>
+            <th>القيمة</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var ItemsProparties in Model)
+        {
+
+            <tr>
+                <td>@x</td>
+                <td>@ItemsProparties.PropartyName </td>
+                <td>@ItemsProparties.PropartyValue </td>
+            </tr>
+            x += 1;
+        }
+    </tbody>
+</table>

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ItemsClass>
+
+@{
+    int x = 1;
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>المادة</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var Items in Model)
+        {
+
+            <tr>
+                <td>@x</td>
+                <td>@Items.ItemName </td>
+            </tr>
+            x += 1;
+        }
+    </tbody>
+</table>
